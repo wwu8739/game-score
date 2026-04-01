@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garfield Game Control Panel</title>
-  <link rel="stylesheet" href="./styles/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Score Lab - Wansheng Wu</title>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+  <header>
+    <h1>Game Score Lab</h1>
+    <p class="subtitle">JavaScript Modules Lab by Wansheng Wu</p>
+  </header>
+
   <main>
-    <h1>Garfield Game Simulator</h1>
-    <p>This page simulates game actions with buttons.</p>
-
-    <section>
-      <button id="save-player-btn">Save Player</button>
-      <button id="record-score-btn">Record High Score</button>
-      <button id="reset-game-btn">Reset Game</button>
-      <button id="view-leaderboard-btn">View Leaderboard</button>
+    <section class="card">
+      <h2>Controls</h2>
+      <div class="button-group">
+        <button id="save-player-btn">Save Player</button>
+        <button id="record-score-btn">Record High Score</button>
+        <button id="reset-game-btn">Reset Game</button>
+        <button id="view-leaderboard-btn">View Leaderboard</button>
+      </div>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Status</h2>
-      <div id="status-message">Ready.</div>
+      <p id="status">Waiting to initialize...</p>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Leaderboard</h2>
-      <ol id="leaderboard-list"></ol>
+      <div id="leaderboard">No scores yet.</div>
+    </section>
+
+    <section class="card">
+      <h2>Debug Output</h2>
+      <pre id="debug-log">Debug log will appear here...</pre>
     </section>
   </main>
+
+  <footer>
+    <p>
+      <a href="https://validator.w3.org/nu/" target="_blank">Nu Validator</a>
+      |
+      <a href="https://github.com/你的GitHub用户名/game-score" target="_blank">My GitHub Repository</a>
+      |
+      <a href="https://你的GitHub用户名.github.io/game-score/" target="_blank">GitHub Pages</a>
+    </p>
+  </footer>
 
   <script type="module" src="./scripts/controllers/game-controller.js"></script>
 </body>
