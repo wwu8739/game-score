@@ -1,5 +1,7 @@
 # 🎮 Front-End JS Modules for the Web Game Project (CIS 376)
 
+> refer to the [wiki/js modules](https://github.com/barrycumbie/game-score/wiki/js-modules)
+
 ## 🧭 BLUF
 For this lab, let's figure out modules & game socring 
 
